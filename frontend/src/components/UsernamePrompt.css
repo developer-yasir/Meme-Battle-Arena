@@ -1,0 +1,81 @@
+.username-prompt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.username-prompt-card {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+.username-prompt-card h2 {
+  font-size: 2.5em;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+
+.username-prompt-card p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.username-prompt-card input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.username-prompt-card button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.username-prompt-card button:hover {
+  background-color: #45a049;
+}
+
+.checking-message {
+  color: #888;
+  font-size: 0.9em;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+.available-message {
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+.taken-message {
+  color: #ff6b6b;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}

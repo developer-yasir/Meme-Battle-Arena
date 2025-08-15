@@ -1,0 +1,17 @@
+.home-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.home-page h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #ff6b6b; /* Vibrant heading color */
+}
+
+.meme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
