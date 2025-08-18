@@ -1,0 +1,47 @@
+.contact-us-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-us-page h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.contact-us-page .card {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.contact-us-page .card h2 {
+  font-size: 1.8em;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.contact-us-page .card p,
+.contact-us-page .card li {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.contact-us-page .card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-us-page .card li {
+  margin-bottom: 10px;
+}
+
+.contact-us-page .card a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-us-page .card a:hover {
+  text-decoration: underline;
+}

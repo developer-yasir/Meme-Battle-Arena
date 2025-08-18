@@ -1,0 +1,38 @@
+.about-us-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-us-page h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.about-us-page .card {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.about-us-page .card h2 {
+  font-size: 1.8em;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.about-us-page .card p,
+.about-us-page .card li {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.about-us-page .card ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.about-us-page .card li {
+  margin-bottom: 10px;
+}

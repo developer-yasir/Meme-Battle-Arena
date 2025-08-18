@@ -1,0 +1,51 @@
+.users-container {
+  padding: 24px;
+}
+
+.users-title {
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+  border: 1px solid var(--light-gray);
+  padding: 8px;
+}
+
+.users-table th {
+  background-color: var(--light-gray);
+  text-align: left;
+}
+
+.ban-button,
+.mute-button {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.ban-button {
+  background-color: var(--secondary-color);
+}
+
+.ban-button:hover {
+  background-color: #8F2D2C; /* Slightly darker secondary */
+}
+
+.mute-button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+.mute-button:hover {
+  background-color: #e0a800;
+}

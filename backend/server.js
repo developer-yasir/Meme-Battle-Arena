@@ -5,6 +5,7 @@ const { Server } = require('socket.io');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
+const startScheduler = require('./utils/scheduler'); // Import scheduler
 
 dotenv.config();
 
@@ -49,4 +50,5 @@ const PORT = process.env.PORT || 5000;
 
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+  startScheduler(); // Start the scheduler after server listens
 });

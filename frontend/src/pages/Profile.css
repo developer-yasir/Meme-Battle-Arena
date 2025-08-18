@@ -1,0 +1,131 @@
+.profile-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile-header {
+  margin-bottom: 40px;
+  padding: 30px;
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--accent-color);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-page h1 {
+  font-size: 3em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.profile-page p {
+  font-size: 1.2em;
+  color: var(--text-color);
+}
+
+.profile-bio {
+  font-size: 1.1em;
+  color: #555;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-page h2 {
+  font-size: 2.5em;
+  color: var(--secondary-color);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.profile-page .meme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.profile-page .error-message {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.edit-profile-button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.edit-profile-button:hover {
+  background-color: #8F2D2C;
+  transform: translateY(-2px);
+}
+
+.edit-profile-form {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fdfdfd;
+}
+
+.edit-profile-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.edit-profile-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.edit-profile-form input[type="text"],
+.edit-profile-form textarea {
+  width: calc(100% - 24px); /* Account for padding */
+  padding: 10px;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.edit-profile-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.edit-profile-form button {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: auto;
+}
+
+.edit-profile-form .cancel-button {
+  background-color: #ccc;
+  color: #333;
+}
+
+.edit-profile-form .cancel-button:hover {
+  background-color: #bbb;
+}

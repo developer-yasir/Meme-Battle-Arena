@@ -1,5 +1,10 @@
+@import url('./colors.css');
+
 body {
-  background-color: #1a202c;
-  color: white;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

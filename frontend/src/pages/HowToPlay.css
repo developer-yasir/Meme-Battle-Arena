@@ -1,0 +1,38 @@
+.how-to-play-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.how-to-play-page h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+}
+
+.how-to-play-page .card {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.how-to-play-page .card h2 {
+  font-size: 1.8em;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.how-to-play-page .card p,
+.how-to-play-page .card li {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.how-to-play-page .card ul {
+  list-style: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.how-to-play-page .card li {
+  margin-bottom: 10px;
+}

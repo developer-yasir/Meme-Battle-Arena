@@ -5,7 +5,7 @@ import AuthContext from '../context/AuthContext';
 import './Navbar.css';
 
 const Navbar = () => {
-  const { user, clearUsername } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
 
   return (
     <nav className="navbar">
@@ -13,10 +13,14 @@ const Navbar = () => {
 
       <div className="navbar-links">
         <Link to="/">Home</Link>
+        <Link to="/how-to-play">How to Play</Link>
+        <Link to="/about-us">About Us</Link>
+        <Link to="/contact-us">Contact Us</Link>
         {user ? (
           <>
+            <Link to={`/profile/${user.username}`}>Profile</Link>
+            <Link to="/settings">Settings</Link> {/* Added Settings link */}
             <span>Welcome, {user.username}!</span>
-            <button onClick={clearUsername}>Clear Username</button>
           </>
         ) : (
           // No links here, as UsernamePrompt will cover the screen

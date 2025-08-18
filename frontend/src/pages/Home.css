@@ -1,17 +1,250 @@
 .home-page {
-  padding: 20px;
+  padding: 0; /* Remove padding from home-page to allow hero to span full width */
   text-align: center;
 }
 
+.hero-section {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 80px 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 4.5em;
+  margin-bottom: 15px;
+  color: white; /* White for hero section heading */
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 30px;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+.hero-cta-button {
+  background-color: var(--accent-color);
+  color: var(--primary-color); /* Primary color for CTA text */
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero-cta-button:hover {
+  background-color: #FFD700; /* Slightly lighter accent */
+  transform: translateY(-3px);
+}
+
 .home-page h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  color: #ff6b6b; /* Vibrant heading color */
+  font-family: 'Bangers', cursive;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.home-page p {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 40px; /* Increased margin */
 }
 
 .meme-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px; /* Increased gap */
   margin-top: 30px;
+  padding: 0 20px; /* Add some padding for smaller screens */
+}
+
+.home-page h2 {
+  font-family: 'Bangers', cursive;
+  font-size: 2.8em;
+  color: var(--secondary-color);
+  margin-top: 50px; /* Increased margin */
+  margin-bottom: 30px; /* Increased margin */
+  letter-spacing: 1.5px;
+}
+
+.featured-memes-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.featured-memes-section h2 {
+  color: var(--primary-color); /* Primary color for featured heading */
+  margin-bottom: 30px;
+}
+
+/* Layout for main content and sidebar */
+.main-content-layout {
+  display: flex;
+  gap: 40px; /* Increased gap */
+  align-items: flex-start; /* Align items to the top */
+  padding: 0 20px;
+}
+
+.main-content {
+  flex: 3; /* Takes more space */
+}
+
+.sidebar {
+  flex: 1; /* Takes less space */
+  background-color: #fff;
+  border-radius: 16px; /* Match card border-radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Match card shadow */
+  padding: 30px; /* Increased padding */
+  margin-top: 30px; /* Adjust margin to align with meme grid */
+}
+
+.sidebar h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 1.8em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light-gray);
+  font-size: 1.1em;
+  color: var(--text-color);
+}
+
+.sidebar ul li:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-list {
+  list-style: none;
+  padding: 0;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.leaderboard-item:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid var(--accent-color);
+}
+
+.leaderboard-item span:first-of-type {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.leaderboard-item span:last-of-type {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.meme-king-display {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meme-king-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.meme-king-username {
+  font-family: 'Bangers', cursive;
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.meme-king-text {
+  font-style: italic;
+  font-size: 1.1em;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.meme-king-votes {
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.meme-king-date {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .main-content-layout {
+    flex-direction: column; /* Stack content and sidebar on smaller screens */
+    align-items: center;
+  }
+
+  .main-content,
+  .sidebar {
+    width: 100%; /* Full width for stacked items */
+    max-width: 600px; /* Limit width for better readability */
+  }
+
+  .meme-grid {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page h1 {
+    font-size: 2.8em;
+  }
+
+  .home-page p {
+    font-size: 1em;
+  }
+
+  .meme-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content-layout {
+    padding: 0 10px;
+  }
 }

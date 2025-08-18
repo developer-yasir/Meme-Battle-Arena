@@ -1,0 +1,78 @@
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 40px 20px; /* Increased padding */
+  margin-top: 60px; /* More space from content above */
+  text-align: center;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-tagline {
+  font-family: 'Bangers', cursive;
+  font-size: 2em;
+  color: var(--accent-color); /* Accent color for tagline */
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer p {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.8em; /* Larger icons */
+  margin: 0 12px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent-color);
+  transform: scale(1.2) rotate(5deg); /* Fun hover effect */
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    margin: 0;
+  }
+
+  .footer-tagline {
+    font-size: 1.5em;
+  }
+}

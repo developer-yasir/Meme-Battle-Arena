@@ -1,16 +1,18 @@
 .meme-form-container {
-  background-color: #f8f8f8;
+  background-color: #fff;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .meme-form-container h2 {
-  font-size: 2em;
-  color: #ff6b6b;
-  margin-bottom: 20px;
-  text-align: center;
+  font-family: 'Bangers', cursive;
+  font-size: 2.5em;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  letter-spacing: 1.5px;
 }
 
 .meme-form-group {
@@ -20,41 +22,54 @@
 .meme-form-group label {
   display: block;
   font-size: 1.1em;
-  color: #555;
-  margin-bottom: 8px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.meme-form-group input[type="file"],
 .meme-form-group input[type="text"] {
-  width: 100%;
+  width: calc(100% - 24px); /* Account for padding */
   padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 2px solid var(--light-gray);
+  border-radius: 8px;
   font-size: 1em;
-  box-sizing: border-box; /* Ensure padding doesn't increase width */
-}
-
-.meme-form-group input[type="file"] {
-  padding: 0;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .meme-form-group input[type="text"]:focus {
-  border-color: #ff6b6b;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(255, 195, 0, 0.3);
   outline: none;
 }
 
 .meme-form-button {
-  background-color: #4CAF50; /* Green button */
+  background-color: var(--secondary-color);
   color: white;
   padding: 12px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1.1em;
-  transition: background-color 0.3s ease;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .meme-form-button:hover {
-  background-color: #45a049;
+  background-color: #8F2D2C;
+  transform: translateY(-2px);
+}
+
+.meme-form-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.1em;
 }

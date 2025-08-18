@@ -1,29 +1,103 @@
 .navbar {
-  background-color: #6a0dad; /* Deep purple */
-  padding: 15px 20px;
+  background-color: var(--primary-color); /* Using primary color from global styles */
+  padding: 15px 30px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-brand {
-  font-size: 28px;
+  font-family: 'Bangers', cursive; /* Using heading font */
+  font-size: 32px;
   font-weight: bold;
   color: white;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  transition: transform 0.2s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
 }
 
 .navbar-links a {
   color: white;
   text-decoration: none;
-  margin-left: 25px;
+  margin-left: 30px;
   font-size: 18px;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--accent-color); /* Accent color for underline */
+  transition: width 0.3s ease-out;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
 }
 
 .navbar-links a:hover {
-  color: #ffeb3b; /* Bright yellow on hover */
+  color: var(--accent-color); /* Bright yellow on hover */
+  transform: translateY(-2px);
+}
+
+.navbar-links span {
+  color: white;
+  font-size: 18px;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+.navbar-links button {
+  background-color: var(--secondary-color); /* Use secondary color for button */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-links button:hover {
+  background-color: #8F2D2C; /* Slightly darker secondary */
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .navbar-brand {
+    margin-bottom: 15px;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links a,
+  .navbar-links span,
+  .navbar-links button {
+    margin: 10px 0;
+  }
 }

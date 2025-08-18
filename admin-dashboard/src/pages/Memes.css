@@ -1,0 +1,41 @@
+.memes-container {
+  padding: 24px;
+}
+
+.memes-title {
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.memes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.memes-table th,
+.memes-table td {
+  border: 1px solid var(--light-gray);
+  padding: 8px;
+}
+
+.memes-table th {
+  background-color: var(--light-gray);
+  text-align: left;
+}
+
+.memes-table img {
+  width: 100px;
+}
+
+.delete-button {
+  padding: 8px 16px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #8F2D2C; /* Slightly darker secondary */
+}

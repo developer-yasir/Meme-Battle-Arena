@@ -5,6 +5,7 @@ import './MemeForm.css';
 
 const MemeForm = () => {
   const [text, setText] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
   const { user } = useContext(AuthContext);
 
   const onChange = (e) => {
@@ -14,10 +15,16 @@ const MemeForm = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     
+    if (!user || !user.username) {
+      alert("Please set a username to create a meme.");
+      return;
+    }
+
     try {
-      await API.post('/memes', { description: text }); // Send text as description
+      await API.post('/memes', { description: text, username: user.username }); // Send username
       setText(''); // Clear form after submission
-      alert('Meme created successfully!');
+      setSuccessMessage('Meme created successfully!');
+      setTimeout(() => setSuccessMessage(''), 3000); // Clear message after 3 seconds
     } catch (error) {
       console.error(error);
       alert('Meme creation failed!');
@@ -43,6 +50,7 @@ const MemeForm = () => {
           Create Meme
         </button>
       </form>
+      {successMessage && <p className="success-message pop-in">{successMessage}</p>}
     </div>
   );
 };
