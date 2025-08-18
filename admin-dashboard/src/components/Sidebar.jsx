@@ -10,6 +10,7 @@ const Sidebar = () => {
     { text: 'Dashboard', path: '/' },
     { text: 'Users', path: '/users' },
     { text: 'Memes', path: '/memes' },
+    { text: 'Polls', path: '/polls' },
   ];
 
   return (

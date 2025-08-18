@@ -7,6 +7,7 @@ import MemeCard from '../components/MemeCard';
 import MemeForm from '../components/MemeForm';
 import UsernamePrompt from '../components/UsernamePrompt';
 import { Link } from 'react-router-dom'; // Import Link for CTA
+import PollWidget from '../components/PollWidget';
 import './Home.css';
 
 const Home = () => {
@@ -100,12 +101,7 @@ const Home = () => {
             </section>
           )}
 
-          <h2>Live Meme Board</h2>
-          <div className="meme-grid">
-            {memes.map((meme) => (
-              <MemeCard key={meme._id} meme={meme} />
-            ))}
-          </div>
+          
         </div>
 
         <aside className="sidebar card">
@@ -136,6 +132,7 @@ const Home = () => {
               <li>No leaderboard data yet.</li>
             )}
           </ul>
+          <PollWidget />
         </aside>
       </div>
       {!user && <UsernamePrompt />} {/* Display UsernamePrompt if no user is set */}

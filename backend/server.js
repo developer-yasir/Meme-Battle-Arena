@@ -29,11 +29,13 @@ const memeRoutes = require('./routes/memeRoutes');
 const userRoutes = require('./routes/userRoutes');
 const analyticsRoutes = require('./routes/analyticsRoutes');
 const roundRoutes = require('./routes/roundRoutes');
+const pollRoutes = require('./routes/pollRoutes');
 
 app.use('/api/memes', memeRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/analytics', analyticsRoutes);
 app.use('/api/rounds', roundRoutes);
+app.use('/api/polls', pollRoutes);
 
 app.get('/', (req, res) => {
   res.send('Meme Battle Arena API is running!');

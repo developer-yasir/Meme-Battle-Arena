@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard.jsx';
 import Users from './pages/Users.jsx';
 import Memes from './pages/Memes.jsx';
 import Login from './pages/Login.jsx';
+import Polls from './pages/Polls.jsx';
 import './index.css';
 
 const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: 'login', element: <Login /> },
       { path: 'users', element: <Users /> },
       { path: 'memes', element: <Memes /> },
+      { path: 'polls', element: <Polls /> },
     ],
   },
 ]);
